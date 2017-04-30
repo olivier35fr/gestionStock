@@ -9,6 +9,9 @@ import { ProduitsPage } from '../pages/produits/produits';
 import { FicheProduitPage } from '../pages/ficheProduit/ficheProduit';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { ProduitsService } from '../services/produits.service';
+import { HttpModule } from '@angular/http';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -22,6 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -35,9 +39,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage
   ],
   providers: [
+    ProduitsService,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
