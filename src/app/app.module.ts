@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AjoutProduitPage } from '../pages/ajoutProduit/ajoutProduit';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { FicheProduitPage } from '../pages/ficheProduit/ficheProduit';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,6 +16,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     AjoutProduitPage,
+    FicheProduitPage,
     ContactPage,
     HomePage,
     TabsPage
@@ -27,6 +29,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AjoutProduitPage,
+    FicheProduitPage,
     ContactPage,
     HomePage,
     TabsPage
