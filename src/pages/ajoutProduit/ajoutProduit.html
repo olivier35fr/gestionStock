@@ -8,4 +8,25 @@
 
 <ion-content padding>
 
+  <button ion-button color="secondary" (click)="nouveauProduit()">Nouveau produit</button>
+  <button ion-button color="secondary" (click)="produitExistant()">Produit existant</button>
+
+  <ion-list *ngIf="checkNouveauProduit">
+
+    <ion-item>
+      <ion-input type="text" placeholder="Référence"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Désignation"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Quantité"></ion-input>
+    </ion-item>
+
+    <button ion-button color="secondary" (click)="ajoutNouveauProduit()">VALIDER</button>
+
+  </ion-list>
+
 </ion-content>
